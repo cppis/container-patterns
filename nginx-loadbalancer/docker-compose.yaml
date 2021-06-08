@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  app-1:
+    image: wyveo/nginx-php-fpm:php80
+    volumes:
+      - ./app.1:/usr/share/nginx/html
+    ports:
+      - "8001:80"
+    networks:
+      - app-network
+  app-2:
+    image: wyveo/nginx-php-fpm:php80
+    volumes:
+      - ./app.2:/usr/share/nginx/html
+    ports:
+      - "8002:80"
+    networks:
+      - app-network
+  lb-1:
+    build: ./nginx
+    ports:
+    - "8008:80"
+    networks:
+      - app-network
+    depends_on:
+      - app-1
+      - app-2
+
+networks:
+    app-network:

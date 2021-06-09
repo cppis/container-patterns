@@ -1,4 +1,5 @@
 # Docker Examples  
+docker examples using linux, nginx, php stack(LEP stack)
 
 <br/>
 
@@ -8,12 +9,12 @@ alse shows enter an interactive shell session on an already-running container.
 
 <br/>
 
-## [nginx-php](./nginx-loadbalancer/README.md)  
+## [nginx-php](./nginx-php/README.md)  
 this example shows how to create `nginx+php-fpm` container.  
 
 <figure>
 <div style="text-align:center">
-  <img src="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R" style="width: 320px; max-width: 100%; height: auto" title="nginx-php" />
+  <img src="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
 </div>
 </figure>
 
@@ -25,7 +26,7 @@ route traffic to two `nginx+php-fpm` container.
 
 <figure>
 <div style="text-align:center">
-  <img src="https://drive.google.com/uc?export=view&id=11Oi7it8xYRrmKowaJ6Muvq3lCgGZ92vB" style="width: 480px; max-width: 100%; height: auto" title="nginx-loadbalancer" />
+  <img src="https://drive.google.com/uc?export=view&id=11Oi7it8xYRrmKowaJ6Muvq3lCgGZ92vB" style="width: 480px; max-width: 50%; height: auto" title="nginx-loadbalancer" />
 </div>
 </figure>
 

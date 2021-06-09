@@ -19,7 +19,7 @@ route traffic to two `nginx+php-fpm` container.
 
 <br/><br/><br/>
 
-## Files  
+## Directory structure  
   ```
   + {Project Root}
     + nginx-lb  

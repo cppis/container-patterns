@@ -10,14 +10,22 @@ this example shows how to create `nginx+php-fpm` container.
 <br/>
 
 ## Dependencies  
-----
 * [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
   debian based container image running nginx and php-fpm & Composer.  
 
 <br/><br/><br/>
 
+## Files  
+  ```
+  + {Project Root}
+    + nginx-php  
+      + app  
+        + index.php
+  ```
+
+<br/><br/><br/>
+
 ## Run  
-----
 ```shell
 $ docker run -d -p 8000:80 -v {Project Root}/nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
 ```

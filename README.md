@@ -7,6 +7,14 @@ docker examples using linux, nginx, php stack(LEP stack)
 this example shows how to create, delete an `nginx` container.  
 alse shows enter an interactive shell session on an already-running container.  
 
+<figure>
+<div style="text-align:center">
+  <img src="https://drive.google.com/uc?export=view&id=1CLrvWv2OVyvrdWbFTiNhmMHOK1S6Zg0u" style="width: 480px; max-width: 50%; height: auto" title="container-basics" />
+</div>
+</figure>
+
+> the above image was referenced from the [Docker for the busy researcher](http://erick.matsen.org/2018/04/19/docker.html)  
+
 <br/>
 
 ## [nginx-php](./nginx-php/README.md)  
@@ -20,7 +28,7 @@ this example shows how to create `nginx+php-fpm` container.
 
 <br/>
 
-## [nginx-loadbalancer](./nginx-loadbalancer/README.md)  
+## [nginx-loadbalancer](./nginx-lb/README.md)  
 this example shows how to create nginx loadbalancer container, which  
 route traffic to two `nginx+php-fpm` container.  
 

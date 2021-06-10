@@ -9,7 +9,7 @@ alse shows enter an interactive shell session on an already-running container.
 
 <figure>
 <div style="text-align:center">
-  <img src="https://drive.google.com/uc?export=view&id=1CLrvWv2OVyvrdWbFTiNhmMHOK1S6Zg0u" style="width: 480px; max-width: 50%; height: auto" title="container-basics" />
+  <img src="https://drive.google.com/uc?export=view&id=1CszpVbnR0OcZ_RyASi5IfE1dV5VCqZ7G" style="width: 480px; max-width: 50%; height: auto" title="container-basics" />
 </div>
 </figure>
 
@@ -22,7 +22,7 @@ this example shows how to create `nginx+php-fpm` container.
 
 <figure>
 <div style="text-align:center">
-  <img src="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
+  <img src="https://drive.google.com/uc?export=view&id=1euIbqKG5GMHILLQKzL6mxYtXmtXK8JKD" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
 </div>
 </figure>
 
@@ -34,7 +34,7 @@ route traffic to two `nginx+php-fpm` container.
 
 <figure>
 <div style="text-align:center">
-  <img src="https://drive.google.com/uc?export=view&id=11Oi7it8xYRrmKowaJ6Muvq3lCgGZ92vB" style="width: 480px; max-width: 50%; height: auto" title="nginx-loadbalancer" />
+  <img src="https://drive.google.com/uc?export=view&id=1pLpvGrI_1pdgPgyy2FEvWEn0dNfNMIQT" style="width: 480px; max-width: 50%; height: auto" title="nginx-loadbalancer" />
 </div>
 </figure>
 

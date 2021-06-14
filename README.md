@@ -18,7 +18,7 @@ alse shows enter an interactive shell session on an already-running container.
 <br/>
 
 ## [nginx-php](./nginx-php/README.md)  
-this example shows how to create `nginx+php-fpm` container.  
+this example shows how to create a `nginx+php-fpm` container.  
 
 <figure>
 <div style="text-align:center">

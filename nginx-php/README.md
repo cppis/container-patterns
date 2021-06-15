@@ -15,7 +15,7 @@ this example shows how to create `nginx+php-fpm` container.
 
 <br/><br/><br/>
 
-## Files  
+## Directory structure  
   ```
   + {Project Root}
     + nginx-php  

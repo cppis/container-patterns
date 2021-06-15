@@ -26,6 +26,10 @@ this example shows how to create a `nginx+php-fpm` container.
 </div>
 </figure>
 
+> If you use Docker for development this way, your production Dockerfile would copy  
+> the production-ready artifacts directly into the image, rather than relying on a bind mount.  
+> from [docker docs - Good use cases for bind mounts](https://docs.docker.com/storage/#good-use-cases-for-bind-mounts)
+
 <br/>
 
 ## [nginx-loadbalancer](./nginx-lb/README.md)  
@@ -39,3 +43,8 @@ route traffic to two `nginx+php-fpm` container.
 </figure>
 
 <br/>
+
+## examples to update  
+* Distributed lock using redis(or CAS)    
+  * [Distributed locks with Redis](https://redis.io/topics/distlock)  
+* 

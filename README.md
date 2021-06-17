@@ -3,7 +3,7 @@ container patterns using linux, nginx, php stack(LEP stack)
 
 <br/>
 
-## [container-basics](./container-basics/README.md)  
+## [container-basics](./0.container-basics/README.md)  
 this example shows how to create, delete an `nginx` container.  
 alse shows enter an interactive shell session on an already-running container.  
 
@@ -18,7 +18,7 @@ alse shows enter an interactive shell session on an already-running container.
 
 <br/>
 
-## [nginx-php](./nginx-php/README.md)  
+## [nginx-php](./1.nginx-php/README.md)  
 this example shows how to create a `nginx+php-fpm` container.  
 
 <figure>
@@ -34,7 +34,7 @@ this example shows how to create a `nginx+php-fpm` container.
 
 <br/>
 
-## [nginx-loadbalancer](./nginx-lb/README.md)  
+## [nginx-loadbalancer](./2.nginx-lb/README.md)  
 this example shows how to create nginx loadbalancer container, which  
 route traffic to two `nginx+php-fpm` container.  
 
@@ -47,13 +47,25 @@ route traffic to two `nginx+php-fpm` container.
 
 <br/>
 
-## [k8s-nginx-php](./k8s-nginx-php/README.md)  
+## [k8s-nginx-php](./3.k8s-nginx-php/README.md)  
 this example shows how to create `nginx+php-fpm` container in `k8s`.  
 
 <figure>
 <div style="text-align:center">
   <a href="https://drive.google.com/uc?export=view&id=1ABoJwkzoD6nvICVI0g-pTflY6c9xy19N">
   <img src="https://drive.google.com/uc?export=view&id=1HTApftaGBMpf4CZza3rN9SuSXkj1jgJe" style="width: 480px; max-width: 50%; height: auto" title="nginx-loadbalancer" />
+</div>
+</figure>
+
+<br/>
+
+## [k8s-trow](./4.k8s-trow/README.md)  
+this example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in [`k8s-nginx-php`](./k8s-nginx-php/README.md).  
+
+<figure>
+<div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=1vAh5kaOIS8OuZ1MQBE4x2Yiy24tmUqVx">
+  <img src="https://drive.google.com/uc?export=view&id=15CpmykDY2NxTe9yTp_Ryt9KJFy45Zu6m" style="width: 480px; max-width: 50%; height: auto" title="nginx-loadbalancer" />
 </div>
 </figure>
 

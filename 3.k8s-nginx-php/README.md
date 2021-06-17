@@ -1,5 +1,5 @@
 # k8s-nginx-php  
-this example shows how to create `nginx+php-fpm` in `k8s`.  
+this example shows how to create `nginx+php-fpm` container in `k8s`.  
 
 <figure>
 <div style="text-align:center">
@@ -23,9 +23,9 @@ this example shows how to create `nginx+php-fpm` in `k8s`.
     + k8s-nginx-php/  
       + app/  
         + index.php
-    + Dockerfile  
-    + configmap.yaml  
-    + pod.yaml  
+      + Dockerfile  
+      + configmap.yaml  
+      + pod.yaml  
   ```
 
 <br/><br/><br/>
@@ -33,18 +33,20 @@ this example shows how to create `nginx+php-fpm` in `k8s`.
 ## Run  
 * build php app image if not exists:  
 ```
-$ docker build . -t k8s-php-app:1.0.0
+$ docker build . -t k8s-php:1.0.0
 ```
 
 <br/>
 
-* start minikube cluster:  
+* start minikube cluster(using-Minikube, non-WSL):  
 ```
 $ minikube start
 $ minikube ip
   {Node IP}
-$ minikube image load k8s-php-app:1.0.0
+$ minikube image load k8s-php:1.0.0
 ```
+
+> In WSL, `localhost` can be `{Node IP}`.  
 
 <br/>
 
@@ -76,7 +78,7 @@ $ kubectl exec -it k8s-nginx-php -c nginx -- /bin/sh
 
 <br/>
 
-* delete minikube cluster:  
+* delete minikube cluster(using-Minikube, non-WSL):  
 ```
 $ minikube delete
 ```

@@ -14,7 +14,7 @@ this example shows how to create `nginx+php-fpm` container.
 * [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
   debian based container image running nginx and php-fpm & Composer.  
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Directory structure  
   ```
@@ -24,7 +24,7 @@ this example shows how to create `nginx+php-fpm` container.
         + index.php
   ```
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Run  
 ```shell

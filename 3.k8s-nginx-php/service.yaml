@@ -6,7 +6,7 @@ metadata:
     app: k8s-nginx-php
 spec:
   selector:
-    app: k8s-nginx-php-pod
+    app: k8s-nginx-php
   type: NodePort
   ports:
     - protocol: TCP

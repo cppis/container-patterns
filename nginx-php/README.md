@@ -3,6 +3,7 @@ this example shows how to create `nginx+php-fpm` container.
 
 <figure>
 <div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R">
   <img src="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R" style="width: 480px; max-width: 100%; height: auto" title="nginx-php" />
 </div>
 </figure>
@@ -17,9 +18,9 @@ this example shows how to create `nginx+php-fpm` container.
 
 ## Directory structure  
   ```
-  + {Project Root}
-    + nginx-php  
-      + app  
+  + {Project Root}/  
+    + nginx-php/  
+      + app/  
         + index.php
   ```
 

@@ -3,6 +3,7 @@ shows basic docker commands
 
 <figure>
 <div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=1CLrvWv2OVyvrdWbFTiNhmMHOK1S6Zg0u">
   <img src="https://drive.google.com/uc?export=view&id=1CLrvWv2OVyvrdWbFTiNhmMHOK1S6Zg0u" style="width: 640px; max-width: 100%; height: auto" title="container-basics" />
 </div>
 </figure>

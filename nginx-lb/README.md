@@ -5,6 +5,7 @@ route traffic to two `nginx+php-fpm` container.
 
 <figure>
 <div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=11Oi7it8xYRrmKowaJ6Muvq3lCgGZ92vB">
   <img src="https://drive.google.com/uc?export=view&id=11Oi7it8xYRrmKowaJ6Muvq3lCgGZ92vB" style="width: 600px; max-width: 100%; height: auto" title="nginx-loadbalancer" />
 </div>
 </figure>
@@ -21,13 +22,13 @@ route traffic to two `nginx+php-fpm` container.
 
 ## Directory structure  
   ```
-  + {Project Root}
-    + nginx-lb  
-      + app.1  
+  + {Project Root}/
+    + nginx-lb/  
+      + app.1/  
         + index.php
-      + app.2  
+      + app.2/  
         + index.php
-      + nginx  
+      + nginx/  
         + Dockerfile
         + nginx.conf
       + docker-compose.yaml  

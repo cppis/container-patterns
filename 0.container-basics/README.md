@@ -1,5 +1,7 @@
 # container basics
-shows basic docker commands 
+This example shows how to create, delete an `nginx` container.  
+It also shows how to run a command which access an interactive shell  
+on a running container.  
 
 <figure>
 <div style="text-align:center">
@@ -7,6 +9,8 @@ shows basic docker commands
   <img src="https://drive.google.com/uc?export=view&id=1CLrvWv2OVyvrdWbFTiNhmMHOK1S6Zg0u" style="width: 640px; max-width: 100%; height: auto" title="container-basics" />
 </div>
 </figure>
+
+> :image referenced from the [*Docker for the busy researcher*](http://erick.matsen.org/2018/04/19/docker.html)  
 
 <br/>
 
@@ -17,7 +21,7 @@ $ docker build [-t {Tag}] .
 
 > [{Tag} format](https://docs.docker.com/engine/reference/commandline/tag/):  
 > ```
-> {Repository}/{Image}:{Tag}
+> [{Repository}/]{Image}[:{Tag}]  
 > ```
 
 <br/>
@@ -27,7 +31,7 @@ $ docker build [-t {Tag}] .
 $ docker run -p 8080:80 -d --name my-nginx nginx
 ```
 
-check nginx:  
+To check nginx, run this command:  
 ```shell
 $ wget localhost:8080
   index.html saved
@@ -84,10 +88,4 @@ execute bash:
 $ docker exec -it {Container ID} /bin/bash
 ```
 
-<br/>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<br/><br/><br/>

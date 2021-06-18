@@ -13,14 +13,14 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
 ## Dependencies  
 * [k8s](https://kubernetes.io/ko/)  
 * [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
-  debian based container image running nginx and php-fpm & Composer.  
+  debian based container image running nginx and php-fpm & composer.  
 
 <br/><br/><br/>
 
 ## Directory structure  
   ```
   + {Project Root}/
-    + k8s-nginx-php/  
+    + 3.k8s-nginx-php/  
       + app/  
         + index.php
       + Dockerfile  
@@ -31,14 +31,14 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
 <br/><br/><br/>
 
 ## Run  
-* build php app image if not exists:  
+* Build php app image if not exists:  
 ```
 $ docker build . -t k8s-php:1.0.0
 ```
 
 <br/>
 
-* start minikube cluster(using-Minikube, non-WSL):  
+* Start minikube cluster(using-Minikube, non-WSL):  
 ```
 $ minikube start
 $ minikube ip
@@ -50,7 +50,7 @@ $ minikube image load k8s-php:1.0.0
 
 <br/>
 
-* create kubernetes workloads:  
+* Create kubernetes workloads:  
 ```shell
 $ kubectl apply -f configmap.yaml  
 $ kubectl apply -f pod.yaml  
@@ -63,7 +63,7 @@ $ kubectl describe service k8s-nginx-php
 
 <br/>
 
-* check running app:  
+* Check running app:  
 ```
 $ kubectl get all
 $ wget {Node IP}:{Node Port}
@@ -71,14 +71,14 @@ $ wget {Node IP}:{Node Port}
 
 <br/>
 
-* run command `/bin/sh` in pod:  
+* Run command `/bin/sh` in pod:  
 ```
 $ kubectl exec -it k8s-nginx-php -c nginx -- /bin/sh
 ```
 
 <br/>
 
-* delete minikube cluster(using-Minikube, non-WSL):  
+* Delete minikube cluster(using-Minikube, non-WSL):  
 ```
 $ minikube delete
 ```

@@ -4,8 +4,9 @@ container patterns using linux, nginx, php stack(LEP stack)
 <br/>
 
 ## [container-basics](./0.container-basics/README.md)  
-this example shows how to create, delete an `nginx` container.  
-alse shows enter an interactive shell session on an already-running container.  
+This example shows how to create, delete an `nginx` container.  
+It also shows how to run a command which access an interactive shell  
+on a running container.  
 
 <figure>
 <div style="text-align:center">
@@ -14,12 +15,12 @@ alse shows enter an interactive shell session on an already-running container.
 </div>
 </figure>
 
-> the above image was referenced from the [Docker for the busy researcher](http://erick.matsen.org/2018/04/19/docker.html)  
+> :image referenced from the [*Docker for the busy researcher*](http://erick.matsen.org/2018/04/19/docker.html)  
 
 <br/>
 
 ## [nginx-php](./1.nginx-php/README.md)  
-this example shows how to create a `nginx+php-fpm` container.  
+This example shows how to create a `nginx+php-fpm` container.  
 
 <figure>
 <div style="text-align:center">
@@ -28,15 +29,16 @@ this example shows how to create a `nginx+php-fpm` container.
 </div>
 </figure>
 
-> If you use Docker for development this way, your production Dockerfile would copy  
-> the production-ready artifacts directly into the image, rather than relying on a bind mount.  
-> from [docker docs - Good use cases for bind mounts](https://docs.docker.com/storage/#good-use-cases-for-bind-mounts)
+> If you use Docker for development this way,  
+> your production Dockerfile would copy the production-ready artifacts   
+> directly into the image, rather than relying on a bind mount.  
+> :from [docker docs - Good use cases for bind mounts](https://docs.docker.com/storage/#good-use-cases-for-bind-mounts)
 
 <br/>
 
 ## [nginx-loadbalancer](./2.nginx-lb/README.md)  
-this example shows how to create nginx loadbalancer container, which  
-route traffic to two `nginx+php-fpm` container.  
+This example shows how to create nginx loadbalancer container, which  
+route traffic to two `nginx+php-fpm` containers.  
 
 <figure>
 <div style="text-align:center">
@@ -48,7 +50,7 @@ route traffic to two `nginx+php-fpm` container.
 <br/>
 
 ## [k8s-nginx-php](./3.k8s-nginx-php/README.md)  
-this example shows how to create `nginx+php-fpm` container in `k8s`.  
+This example shows how to create `nginx+php-fpm` container in `k8s`.  
 
 <figure>
 <div style="text-align:center">
@@ -60,7 +62,7 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
 <br/>
 
 ## [k8s-trow](./4.k8s-trow/README.md)  
-this example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in [`k8s-nginx-php`](./k8s-nginx-php/README.md).  
+This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./3.k8s-nginx-php/README.md).  
 
 <figure>
 <div style="text-align:center">
@@ -74,4 +76,3 @@ this example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manag
 ## examples to update  
 * Distributed lock using redis(or CAS)    
   * [Distributed locks with Redis](https://redis.io/topics/distlock)  
-* k8s examples  

@@ -1,5 +1,5 @@
 # nginx-php  
-this example shows how to create `nginx+php-fpm` container.  
+This example shows how to create `nginx+php-fpm` container.  
 
 <figure>
 <div style="text-align:center">
@@ -12,7 +12,7 @@ this example shows how to create `nginx+php-fpm` container.
 
 ## Dependencies  
 * [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
-  debian based container image running nginx and php-fpm & Composer.  
+  debian based container image running nginx and php-fpm & composer.  
 
 <br/><br/>
 
@@ -28,5 +28,11 @@ this example shows how to create `nginx+php-fpm` container.
 
 ## Run  
 ```shell
-$ docker run -d -p 8000:80 -v {Project Root}/nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
+$ docker run -d -p 8000:80 -v {Project Root}/1.nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
+```
+
+To check nginx, run this command:  
+```shell
+$ wget localhost:8000
+  index.html saved
 ```

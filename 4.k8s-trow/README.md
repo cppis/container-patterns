@@ -1,5 +1,5 @@
 # k8s-trow  
-this example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s`.  
+This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./3.k8s-nginx-php/README.md).  
 
 To use images in a Kubernetes, you need a registry.  
 Let's run a registy in a Kubernetes cluster.  
@@ -22,7 +22,7 @@ Let's run a registy in a Kubernetes cluster.
 ## Directory structure  
   ```
   + {Project Root}/
-    + k8s-trow/  
+    + 4.k8s-trow/  
       + app/  
         + index.php
       + Dockerfile  
@@ -40,13 +40,12 @@ $ cd trow/quick-install
 $ ./install.sh
 ```
 
-> You may also need to extend your users privileges by running:  
-> ```
-> $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=username  
-> ```
+  > You may need to extend your users privileges by running:  
+  > ```
+  > $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=username  
+  > ```
 
-The registry address `trow.kube-public` is configured by adding an  
-entry to `/etc/hosts` .   
+The registry address `trow.kube-public` is adding to `/etc/hosts` .   
 
 * Try pushing an image to Trow:  
 ```
@@ -55,21 +54,9 @@ $ docker tag nginx:1.21.0 trow.kube-public:31000/nginx:1.21.0
 $ docker push trow.kube-public:31000/k8s-php:1.0.0
 ```
 
-> * Why tag official `nginx:1.21.0` image from Docker Hub?  
-> With an integration with Kubernetes,  
-> it can allow only certain images to be loaded,  
-> preventing others as a security measure.  
-> Using an image that is not allowed results in the following error:  
->  
-> ```
-> Error creating: admission webhook "validator.trow.io" denied the request:   
-> Remote image docker.io/nginx disallowed as not contained in this registry  
-> and not in allow list  
-> ```  
-
 <br/>
 
-* Change image field value in the `pod.yaml`:  
+* Change image field value in the `pod.yaml` of previous example [`k8s-nginx-php`](./3.k8s-nginx-php/README.md):  
   * From:  
   ```
   containers.image: k8s-php:1.0.0
@@ -81,10 +68,14 @@ $ docker push trow.kube-public:31000/k8s-php:1.0.0
   containers.image: trow.kube-public:31000/nginx:1.21.0
   ```
 
-* create kubernetes workloads:  
+* Create kubernetes ConfigMap and Pod:  
 ```shell
 $ kubectl apply -f configmap.yaml  
 $ kubectl apply -f pod.yaml  
+```
+
+* Create Service in a cluster with `kubectl expose`:  
+```shell
 $ kubectl expose pod k8s-nginx-php --type=NodePort --port=80
 $ kubectl describe service k8s-nginx-php
   ...
@@ -92,9 +83,7 @@ $ kubectl describe service k8s-nginx-php
   ...
 ```
 
-<br/>
-
-* check running app:  
+* Check running app:  
 ```
 $ kubectl get all
 $ wget {Node IP}:{Node Port}
@@ -103,12 +92,26 @@ $ wget {Node IP}:{Node Port}
 <br/><br/>
 
 ## Tips  
-...
+* Why tag official Docker Hub image `nginx:1.21.0` to Trow?  
+  With an integration with Kubernetes, it can allow only certain images  
+  to be loaded, preventing others as a security measure.  
+  Using an image that is not allowed results in the following error:  
+  
+  ```
+  Error creating: admission webhook "validator.trow.io" denied the request:   
+  Remote image docker.io/nginx disallowed as not contained in this registry  
+  and not in allow list  
+  ```  
+
 
 <br/><br/>
 
 ## References  
+### Kubernetes  
+* [Exposing an External IP Address to Access an Application in a Cluster](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/)  
+* [kubernetes - Images](https://kubernetes.io/ko/docs/concepts/containers/images/)  
+
+### Trow  
 * [Trow](https://github.com/ContainerSolutions/trow)  
 * [Trow, a Container Registry to Run Inside Your Kubernetes Cluster](https://thenewstack.io/trow-a-container-registry-to-run-inside-a-kubernetes-cluster/)  
-* [kubernetes - Images](https://kubernetes.io/ko/docs/concepts/containers/images/)  
 * [Installing a Registry on Kubernetes (Quickstart)](https://blog.container-solutions.com/installing-a-registry-on-kubernetes-quickstart)  

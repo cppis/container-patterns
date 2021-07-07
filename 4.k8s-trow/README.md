@@ -15,6 +15,15 @@ Let's run a registy in a Kubernetes cluster.
 
 ## Dependencies  
 * [k8s](https://kubernetes.io/ko/)  
+* [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
+  debian based container image running nginx and php-fpm & composer.  
+* [minikube hypherv driver](https://minikube.sigs.k8s.io/docs/drivers/hyperv/)  
+  There is a native tool for kubernetes called Minikube.  
+  You can run kubernetes locally using minikube.  
+
+  I recommend installing VirtualBox or Hyper-V to run Minikube on Windows.  
+  Hyper-V can run on three versions of Windows 10:  
+  (Windows 10 Enterprise, Windows 10 Professional, and Windows 10 Education.)
 * [Trow](https://github.com/ContainerSolutions/trow)  
 
 <br/><br/>

@@ -50,7 +50,7 @@ route traffic to two `nginx+php-fpm` containers.
 <br/>
 
 ## [nginx-php-xdebug](./3.nginx-php-xdebug/README.md)  
-This example shows how to create a `nginx' , 'php-fpm+xdebug` container using `docker-compose`.  
+This example shows how to create a `nginx`, `php-fpm+xdebug` container using `docker-compose`.  
 
 <figure>
 <div style="text-align:center">

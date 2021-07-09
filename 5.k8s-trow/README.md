@@ -6,8 +6,8 @@ Let's run a registy in a Kubernetes cluster.
 
 <figure>
 <div style="text-align:center">
-  <a href="https://drive.google.com/uc?export=view&id=1DhZIpDRFDs3TzXSQGybhVnQaT-XFMKCb">
-  <img src="https://drive.google.com/uc?export=view&id=1DhZIpDRFDs3TzXSQGybhVnQaT-XFMKCb" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
+  <a href="https://drive.google.com/uc?export=view&id=1vAh5kaOIS8OuZ1MQBE4x2Yiy24tmUqVx">
+  <img src="https://drive.google.com/uc?export=view&id=1vAh5kaOIS8OuZ1MQBE4x2Yiy24tmUqVx" style="width: 480px; max-width: 50%; height: auto" title="k8s-trow" />
 </div>
 </figure>
 

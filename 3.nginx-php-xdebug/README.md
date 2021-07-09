@@ -1,18 +1,16 @@
 # nginx-php-xdebug  
-This example shows how to create a `nginx' , 'php-fpm+xdebug` container using `docker-compose`.  
+This example shows how to create a `nginx`, `php-fpm+xdebug` container using `docker-compose`.  
 
 <figure>
 <div style="text-align:center">
-  <a href="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R">
-  <img src="https://drive.google.com/uc?export=view&id=1STzTfblh6o5POWmd7gD6Te4foy-wX33R" style="width: 480px; max-width: 100%; height: auto" title="nginx-php" />
+  <a href="https://drive.google.com/uc?export=view&id=1DhZIpDRFDs3TzXSQGybhVnQaT-XFMKCb">
+  <img src="https://drive.google.com/uc?export=view&id=1DhZIpDRFDs3TzXSQGybhVnQaT-XFMKCb" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
 </div>
 </figure>
 
 <br/>
 
 ## Dependencies  
-* [hodanov/docker-template-php](https://github.com/hodanov/docker-template-php)  
-  container image running nginx and php-fpm & xdebug.  
 * [docker-compose](https://docs.docker.com/compose/)  
 * [vscode](https://code.visualstudio.com/)  
   * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) extensions  
@@ -40,8 +38,12 @@ This example shows how to create a `nginx' , 'php-fpm+xdebug` container using `d
 To builds, (re)creates, starts, and attaches to containers for a service,  
 run this command:  
 ```shell
+$ cd {Project Root}/3.nginx-php-xdebug  
 $ docker-compose up -d [--force-recreate]
 ```
+
+> If you need scale service to multiple instance.   
+> Add scale option like `--scale SERVICE=NUM`.  
 
 To check nginx, run this command:  
 ```shell
@@ -49,8 +51,8 @@ $ wget localhost:8000
   index.html saved
 ```
 
-To debug php,  
-go to `Run And Debug` > `Listen for XDebug 3.nginx-php-xdebug`  
+To debug php using *Visual Studio Code*,  
+go to *`Run And Debug`* > *`Listen for XDebug 3.nginx-php-xdebug`*  
 and add breakpoint to php source(index.php)  
 
 To stop and remove containers, network, volumes, and images created by `up`,  
@@ -58,3 +60,10 @@ run this command:
 ```shell
 $ docker-compose down [--remove-orphans]
 ```
+
+<br/><br/>
+
+## References  
+* [hodanov/docker-template-php](https://github.com/hodanov/docker-template-php)  
+  container image running nginx and php-fpm & xdebug.  
+* [docker-compose up](https://docs.docker.com/compose/reference/up/)  

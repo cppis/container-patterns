@@ -49,7 +49,19 @@ route traffic to two `nginx+php-fpm` containers.
 
 <br/>
 
-## [k8s-nginx-php](./3.k8s-nginx-php/README.md)  
+## [nginx-php-xdebug](./3.nginx-php-xdebug/README.md)  
+This example shows how to create a `nginx' , 'php-fpm+xdebug` container using `docker-compose`.  
+
+<figure>
+<div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=1DhZIpDRFDs3TzXSQGybhVnQaT-XFMKCb">
+  <img src="https://drive.google.com/uc?export=view&id=1TgATS-jP1rFrk7Nvv8Ns_P0GQePdSvdf" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
+</div>
+</figure>
+
+<br/>
+
+## [k8s-nginx-php](./4.k8s-nginx-php/README.md)  
 This example shows how to create `nginx+php-fpm` container in `k8s`.  
 
 <figure>
@@ -61,8 +73,8 @@ This example shows how to create `nginx+php-fpm` container in `k8s`.
 
 <br/>
 
-## [k8s-trow](./4.k8s-trow/README.md)  
-This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./3.k8s-nginx-php/README.md).  
+## [k8s-trow](./5.k8s-trow/README.md)  
+This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./4.k8s-nginx-php/README.md).  
 
 <figure>
 <div style="text-align:center">

@@ -19,7 +19,7 @@ This example shows how to create `nginx+php-fpm` container.
 ## Directory structure  
   ```
   + {Project Root}/  
-    + nginx-php/  
+    + 1.nginx-php/  
       + app/  
         + index.php
   ```

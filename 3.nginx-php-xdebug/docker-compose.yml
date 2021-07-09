@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  php-fpm:
+    container_name: php-fpm
+    build:
+      context: .
+      dockerfile: php.Dockerfile
+    #tty: true
+    volumes:
+      - ./php/app:/usr/src/app
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./php/log:/var/log
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
+    depends_on:
+      - php-fpm
+    #tty: true
+    volumes:
+      - ./php/app:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8000:80

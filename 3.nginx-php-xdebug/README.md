@@ -1,5 +1,5 @@
-# nginx-php  
-This example shows how to create `nginx+php-fpm` container.  
+# nginx-php-xdebug  
+This example shows how to create a `nginx' , 'php-fpm+xdebug` container using `docker-compose`.  
 
 <figure>
 <div style="text-align:center">
@@ -13,6 +13,9 @@ This example shows how to create `nginx+php-fpm` container.
 ## Dependencies  
 * [hodanov/docker-template-php](https://github.com/hodanov/docker-template-php)  
   container image running nginx and php-fpm & xdebug.  
+* [docker-compose](https://docs.docker.com/compose/)  
+* [vscode](https://code.visualstudio.com/)  
+  * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) extensions  
 
 <br/><br/>
 
@@ -45,6 +48,10 @@ To check nginx, run this command:
 $ wget localhost:8000
   index.html saved
 ```
+
+To debug php,  
+go to `Run And Debug` > `Listen for XDebug 3.nginx-php-xdebug`  
+and add breakpoint to php source(index.php)  
 
 To stop and remove containers, network, volumes, and images created by `up`,  
 run this command:  

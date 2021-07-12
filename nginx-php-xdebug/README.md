@@ -20,7 +20,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 ## Directory structure  
   ```
   + {Project Root}/  
-    + 3.nginx-php-xdebug/  
+    + nginx-php-xdebug/  
       + .vscode/
         + launch.json
       + nginx/  
@@ -38,7 +38,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 To builds, (re)creates, starts, and attaches to containers for a service,  
 run this command:  
 ```shell
-$ cd {Project Root}/3.nginx-php-xdebug  
+$ cd {Project Root}/nginx-php-xdebug  
 $ docker-compose up -d [--force-recreate]
 ```
 
@@ -52,7 +52,7 @@ $ wget localhost:8000
 ```
 
 To debug php using *Visual Studio Code*,  
-go to *`Run And Debug`* > *`Listen for XDebug 3.nginx-php-xdebug`*  
+go to *`Run And Debug`* > *`Listen for XDebug nginx-php-xdebug`*  
 and add breakpoint to php source(index.php)  
 
 To stop and remove containers, network, volumes, and images created by `up`,  

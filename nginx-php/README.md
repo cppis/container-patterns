@@ -19,7 +19,7 @@ This example shows how to create `nginx+php-fpm` container.
 ## Directory structure  
   ```
   + {Project Root}/  
-    + 1.nginx-php/  
+    + nginx-php/  
       + app/  
         + index.php
   ```
@@ -28,7 +28,7 @@ This example shows how to create `nginx+php-fpm` container.
 
 ## Run  
 ```shell
-$ docker run -d -p 8000:80 -v {Project Root}/1.nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
+$ docker run -d -p 8000:80 -v {Project Root}/nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
 ```
 
 To check nginx, run this command:  

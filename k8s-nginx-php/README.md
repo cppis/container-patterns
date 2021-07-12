@@ -28,7 +28,7 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
 ## Directory structure  
   ```
   + {Project Root}/
-    + 4.k8s-nginx-php/  
+    + k8s-nginx-php/  
       + app/  
         + index.php
       + Dockerfile  

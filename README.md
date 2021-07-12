@@ -3,7 +3,7 @@ container patterns using linux, nginx, php stack(LEP stack)
 
 <br/>
 
-## [container-basics](./0.container-basics/README.md)  
+## [container-basics](./container-basics/README.md)  
 This example shows how to create, delete an `nginx` container.  
 It also shows how to run a command which access an interactive shell  
 on a running container.  
@@ -19,7 +19,7 @@ on a running container.
 
 <br/>
 
-## [nginx-php](./1.nginx-php/README.md)  
+## [nginx-php](./nginx-php/README.md)  
 This example shows how to create a `nginx+php-fpm` container.  
 
 <figure>
@@ -36,7 +36,7 @@ This example shows how to create a `nginx+php-fpm` container.
 
 <br/>
 
-## [nginx-loadbalancer](./2.nginx-lb/README.md)  
+## [nginx-loadbalancer](./nginx-lb/README.md)  
 This example shows how to create nginx loadbalancer container, which  
 route traffic to two `nginx+php-fpm` containers.  
 
@@ -49,7 +49,7 @@ route traffic to two `nginx+php-fpm` containers.
 
 <br/>
 
-## [nginx-php-xdebug](./3.nginx-php-xdebug/README.md)  
+## [nginx-php-xdebug](./nginx-php-xdebug/README.md)  
 This example shows how to create a `nginx`, `php-fpm+xdebug` container using `docker-compose`.  
 
 <figure>
@@ -61,7 +61,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 
 <br/>
 
-## [k8s-nginx-php](./4.k8s-nginx-php/README.md)  
+## [k8s-nginx-php](./k8s-nginx-php/README.md)  
 This example shows how to create `nginx+php-fpm` container in `k8s`.  
 
 <figure>
@@ -73,8 +73,8 @@ This example shows how to create `nginx+php-fpm` container in `k8s`.
 
 <br/>
 
-## [k8s-trow](./5.k8s-trow/README.md)  
-This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./4.k8s-nginx-php/README.md).  
+## [k8s-trow](./k8s-trow/README.md)  
+This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./k8s-nginx-php/README.md).  
 
 <figure>
 <div style="text-align:center">

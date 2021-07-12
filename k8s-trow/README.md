@@ -1,5 +1,5 @@
 # k8s-trow  
-This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./4.k8s-nginx-php/README.md).  
+This example shows [`Trow`](https://github.com/ContainerSolutions/trow) to manage images in `k8s` using [`k8s-nginx-php`](./k8s-nginx-php/README.md).  
 
 To use images in a Kubernetes, you need a registry.  
 Let's run a registy in a Kubernetes cluster.  
@@ -31,7 +31,7 @@ Let's run a registy in a Kubernetes cluster.
 ## Directory structure  
   ```
   + {Project Root}/
-    + 5.k8s-trow/  
+    + k8s-trow/  
       + app/  
         + index.php
       + Dockerfile  
@@ -65,7 +65,7 @@ $ docker push trow.kube-public:31000/k8s-php:1.0.0
 
 <br/>
 
-* Change image field value in the `pod.yaml` of previous example [`k8s-nginx-php`](./4.k8s-nginx-php/README.md):  
+* Change image field value in the `pod.yaml` of previous example [`k8s-nginx-php`](./k8s-nginx-php/README.md):  
   * From:  
   ```
   containers.image: k8s-php:1.0.0

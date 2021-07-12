@@ -22,7 +22,7 @@ route traffic to two `nginx+php-fpm` container.
 ## Directory structure  
   ```
   + {Project Root}/
-    + 2.nginx-lb/  
+    + nginx-lb/  
       + app.1/  
         + index.php
       + app.2/  
@@ -64,7 +64,7 @@ route traffic to two `nginx+php-fpm` container.
 
 ## Run  
 ```shell
-$ cd {Project Root}/2.nginx-lb
+$ cd {Project Root}/nginx-lb
 $ docker-compose up -d [--build --force-recreate]
 ```
 

@@ -12,6 +12,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 
 ## Dependencies  
 * [docker-compose](https://docs.docker.com/compose/)  
+* [PHP Brick\Http](https://github.com/brick/http)  
 * [vscode](https://code.visualstudio.com/)  
   * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) extensions  
 

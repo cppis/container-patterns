@@ -1,5 +1,5 @@
-# nginx-php-composer  
-This example shows how to create a `nginx+php-fpm` container and update packages using `composer`.  
+# nginx-php-skaffold  
+This example shows how to create a `nginx+php-fpm` container and update packages using `skaffold`.  
 
 <figure>
 <div style="text-align:center">
@@ -13,8 +13,6 @@ This example shows how to create a `nginx+php-fpm` container and update packages
 ## Dependencies  
 * [wyveo/nginx-php-fpm](https://github.com/wyveo/nginx-php-fpm)  
   debian based container image running nginx and php-fpm & composer.  
-* [brick/http](https://github.com/brick/http)  
-  provides PHP classes to work with HTTP requests and responses.  
 
 <br/><br/><br/>
  

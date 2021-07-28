@@ -65,7 +65,7 @@ route traffic to two `nginx+php-fpm` container.
 ## Run  
 * Move to working path:  
 ```shell
-cd cd {Project Root}/nginx-lb
+cd {Project Root}/nginx-lb
 ```
 
 <br/>

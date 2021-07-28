@@ -34,7 +34,7 @@ $ docker run -p 8080:80 -d --name my-nginx nginx
 
 <br/>
 
-* To check nginx, run this command:  
+* To test nginx, run this command:  
 ```shell
 $ wget localhost:8080
   index.html saved

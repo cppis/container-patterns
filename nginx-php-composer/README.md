@@ -82,7 +82,7 @@ $ docker run -d -p 8000:80 -v ${PWD}:/usr/share/nginx/html wyveo/nginx-php-fpm:p
 
 <br/>
 
-* To check nginx, run this command:  
+* To test app, run this command:  
 ```shell
 $ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:8000
   body:{"key1":"value1", "key2":"value2"}

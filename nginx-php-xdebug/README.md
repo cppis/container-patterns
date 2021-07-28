@@ -38,7 +38,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 ## Run  
 * Move to working path:  
 ```shell
-cd cd {Project Root}/nginx-php-xdebug
+cd {Project Root}/nginx-php-xdebug
 ```
 
 <br/>
@@ -55,7 +55,7 @@ $ docker-compose up -d [--force-recreate]
 
 <br/>
 
-* To check nginx, run this command:  
+* To test a app, run this command:  
 ```shell
 $ wget localhost:8000
   index.html saved

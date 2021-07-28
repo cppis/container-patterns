@@ -21,7 +21,7 @@ This example shows how to create a `nginx+php-fpm` container and update packages
 ## Directory structure  
   ```
   + {Project Root}/  
-    + nginx-php/  
+    + nginx-php-composer/  
       + app/  
         + vendor/ (generated)  
         + index.php

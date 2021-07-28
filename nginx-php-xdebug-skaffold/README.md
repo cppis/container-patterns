@@ -1,5 +1,5 @@
-# nginx-php-xdebug-skaffold  
-This example shows how to use a `skaffold` using `nginx-php-xdebug`.  
+# nginx-php-skaffold  
+This example shows how to create a `nginx`, `php-fpm+xdebug` container using `docker-compose`.  
 
 <figure>
 <div style="text-align:center">
@@ -12,7 +12,7 @@ This example shows how to use a `skaffold` using `nginx-php-xdebug`.
 
 ## Dependencies  
 * [docker-compose](https://docs.docker.com/compose/)  
-* [PHP Brick\Http](https://github.com/brick/http)  
+* [Skaffold](https://skaffold.dev/)  
 * [vscode](https://code.visualstudio.com/)  
   * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) extensions  
 
@@ -31,7 +31,6 @@ This example shows how to use a `skaffold` using `nginx-php-xdebug`.
     + docker-compose.yml  
     + nginx.Dockerfile  
     + php.Dockerfile  
-    + skaffold.yaml
   ```
 
 <br/><br/><br/>
@@ -82,3 +81,4 @@ $ docker-compose down [--remove-orphans]
 * [hodanov/docker-template-php](https://github.com/hodanov/docker-template-php)  
   container image running nginx and php-fpm & xdebug.  
 * [docker-compose up](https://docs.docker.com/compose/reference/up/)  
+* [kompose](https://kompose.io/installation/)  

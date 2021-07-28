@@ -36,6 +36,23 @@ This example shows how to create a `nginx+php-fpm` container.
 
 <br/>
 
+## [nginx-php-composer](./nginx-php-composer/README.md)  
+This example shows how to create a `nginx+php-fpm` container and update packages using `composer`.   
+
+<figure>
+<div style="text-align:center">
+  <a href="https://drive.google.com/uc?export=view&id=1WZGyVct251iXW2Z7tAHAabrAOqy9E-iS">
+  <img src="https://drive.google.com/uc?export=view&id=15WImQr1xDVF83yUSVGYPIevzQ8QUCbqB" style="width: 320px; max-width: 50%; height: auto" title="nginx-php" />
+</div>
+</figure>
+
+> If you use Docker for development this way,  
+> your production Dockerfile would copy the production-ready artifacts   
+> directly into the image, rather than relying on a bind mount.  
+> :from [docker docs - Good use cases for bind mounts](https://docs.docker.com/storage/#good-use-cases-for-bind-mounts)
+
+<br/>
+
 ## [nginx-loadbalancer](./nginx-lb/README.md)  
 This example shows how to create nginx loadbalancer container, which  
 route traffic to two `nginx+php-fpm` containers.  

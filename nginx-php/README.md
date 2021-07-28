@@ -27,11 +27,21 @@ This example shows how to create `nginx+php-fpm` container.
 <br/><br/>
 
 ## Run  
+* Move to working path:  
 ```shell
-$ docker run -d -p 8000:80 -v {Project Root}/nginx-php/app:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
+cd {Project Root}/nginx-php/app
 ```
 
-To check nginx, run this command:  
+<br/>
+
+* Run a app:  
+```shell
+$ docker run -d -p 8000:80 -v ${PWD}:/usr/share/nginx/html wyveo/nginx-php-fpm:php80
+```
+
+> Use `%cd%` instead of `${PWD}` on Windows  
+
+* To check nginx, run this command:  
 ```shell
 $ wget localhost:8000
   index.html saved

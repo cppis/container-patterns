@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f7aef08a51c44c7cba854143bef495d6",
+    "packages": [
+        {
+            "name": "brick/http",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/http.git",
+                "reference": "204480546bef88a58de85422ccd38c747bbc5ac0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/http/zipball/204480546bef88a58de85422ccd38c747bbc5ac0",
+                "reference": "204480546bef88a58de85422ccd38c747bbc5ac0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "vimeo/psalm": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTTP request and response library",
+            "keywords": [
+                "brick",
+                "http",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/http/issues",
+                "source": "https://github.com/brick/http/tree/0.3.2"
+            },
+            "time": "2021-02-13T22:33:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

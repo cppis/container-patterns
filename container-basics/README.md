@@ -27,11 +27,14 @@ $ docker build [-t {Tag}] .
 <br/>
 
 ## Create an nginx container    
+* To run nginx, run this command:  
 ```shell
 $ docker run -p 8080:80 -d --name my-nginx nginx
 ```
 
-To check nginx, run this command:  
+<br/>
+
+* To check nginx, run this command:  
 ```shell
 $ wget localhost:8080
   index.html saved

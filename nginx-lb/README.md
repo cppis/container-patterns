@@ -63,8 +63,14 @@ route traffic to two `nginx+php-fpm` container.
 <br/><br/><br/>
 
 ## Run  
+* Move to working path:  
 ```shell
-$ cd {Project Root}/nginx-lb
+cd cd {Project Root}/nginx-lb
+```
+
+<br/>
+
+```shell
 $ docker-compose up -d [--build --force-recreate]
 ```
 

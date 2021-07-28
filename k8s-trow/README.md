@@ -26,7 +26,7 @@ Let's run a registy in a Kubernetes cluster.
   (Windows 10 Enterprise, Windows 10 Professional, and Windows 10 Education.)
 * [Trow](https://github.com/ContainerSolutions/trow)  
 
-<br/><br/>
+<br/><br/><br/>
 
 ## Directory structure  
   ```
@@ -39,9 +39,16 @@ Let's run a registy in a Kubernetes cluster.
       + pod.yaml  
   ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## Run  
+* Move to working path:  
+```shell
+cd {Project Root}/k8s-trow/  
+```
+
+<br/>
+
 * Install Trow on cluster:  
 ```
 $ git clone https://github.com/ContainerSolutions/trow.git
@@ -98,7 +105,7 @@ $ kubectl get all
 $ wget {Node IP}:{Node Port}
 ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## Tips  
 * Why tag official Docker Hub image `nginx:1.21.0` to Trow?  
@@ -113,7 +120,7 @@ $ wget {Node IP}:{Node Port}
   ```  
 
 
-<br/><br/>
+<br/><br/><br/>
 
 ## References  
 ### Kubernetes  

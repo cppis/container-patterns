@@ -15,7 +15,7 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
 * [vscode](https://code.visualstudio.com/)  
   * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) extensions  
 
-<br/><br/>
+<br/><br/><br/>
 
 ## Directory structure  
   ```
@@ -32,10 +32,17 @@ This example shows how to create a `nginx`, `php-fpm+xdebug` container using `do
     + php.Dockerfile  
   ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## Run  
-To builds, (re)creates, starts, and attaches to containers for a service,  
+* Move to working path:  
+```shell
+cd cd {Project Root}/nginx-php-xdebug
+```
+
+<br/>
+
+* To builds, (re)creates, starts, and attaches to containers for a service,  
 run this command:  
 ```shell
 $ cd {Project Root}/nginx-php-xdebug  
@@ -45,23 +52,29 @@ $ docker-compose up -d [--force-recreate]
 > If you need scale service to multiple instance.   
 > Add scale option like `--scale SERVICE=NUM`.  
 
-To check nginx, run this command:  
+<br/>
+
+* To check nginx, run this command:  
 ```shell
 $ wget localhost:8000
   index.html saved
 ```
 
-To debug php using *Visual Studio Code*,  
+<br/>
+
+* To debug php using *Visual Studio Code*,  
 go to *`Run And Debug`* > *`Listen for XDebug nginx-php-xdebug`*  
 and add breakpoint to php source(index.php)  
 
-To stop and remove containers, network, volumes, and images created by `up`,  
+<br/>
+
+* To stop and remove containers, network, volumes, and images created by `up`,  
 run this command:  
 ```shell
 $ docker-compose down [--remove-orphans]
 ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## References  
 * [hodanov/docker-template-php](https://github.com/hodanov/docker-template-php)  

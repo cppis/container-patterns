@@ -39,6 +39,13 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
 <br/><br/><br/>
 
 ## Run  
+* Move to working path:  
+```shell
+cd {Project Root}/k8s-nginx-php/  
+```
+
+<br/>
+
 * Build php app image if not exists:  
 ```
 $ docker build . -t k8s-php:1.0.0

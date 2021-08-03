@@ -31,9 +31,10 @@ this example shows how to create `nginx+php-fpm` container in `k8s`.
     + k8s-nginx-php/  
       + app/  
         + index.php
+      * resources
+        + configmap.yaml  
+        + pod.yaml  
       + Dockerfile  
-      + configmap.yaml  
-      + pod.yaml  
   ```
 
 <br/><br/><br/>
@@ -56,46 +57,34 @@ $ docker build . -t k8s-php:1.0.0
 * Start minikube cluster(using-Minikube, non-WSL):  
 ```
 $ minikube start
-$ minikube ip
-  {Node IP}
 $ minikube image load k8s-php:1.0.0
 ```
 
-> In WSL, `localhost` can be `{Node IP}`.  
+> In WSL, You can also use `localhost` with the `{Node IP}` obtained as a result of  
+> executing command `minikube ip`
 
 <br/>
 
 * Create kubernetes workloads:  
 ```shell
-$ kubectl apply -f configmap.yaml  
-$ kubectl apply -f pod.yaml  
+$ kubectl apply -f resources/  
+  configmap/k8s-nginx-config created
+  pod/k8s-nginx-php created
+```
+
+<br/>
+
+* Expose service:  
+```shell
 $ kubectl expose pod k8s-nginx-php --type=NodePort --port=80
-$ kubectl describe service k8s-nginx-php
-  ...
-  NodePort:	<unset>	{Node Port}/TCP
-  ...
 ```
 
 <br/>
 
-* Check running app:  
-```
-$ kubectl get all
-$ wget {Node IP}:{Node Port}
-```
-
-<br/>
-
-* Run command `/bin/sh` in pod:  
-```
-$ kubectl exec -it k8s-nginx-php -c nginx -- /bin/sh
-```
-
-<br/>
-
-* Delete minikube cluster(using-Minikube, non-WSL):  
-```
-$ minikube delete
+* Get service url:  
+```shell
+$ minikube service k8s-nginx-php --url
+  {Service Url}
 ```
 
 <br/><br/><br/>
@@ -115,9 +104,37 @@ $ minikube delete
   $ docker inspect NAME|ID
   ```
 
+* Describe kubernetes service:  
+```shell
+$ $ kubectl describe service k8s-nginx-php
+```
+
+<br/>
+
+* Check running app in the kubernetes:  
+```
+$ kubectl get all
+$ wget {Service Url}
+```
+
+<br/>
+
+* Run command `/bin/sh` in kubernetes pod:  
+```
+$ kubectl exec -it k8s-nginx-php -c nginx -- /bin/sh
+```
+
+<br/>
+
+* Delete minikube cluster(using-Minikube, non-WSL):  
+```
+$ minikube delete
+```
+
 <br/><br/><br/>
 
 ## References  
+* [PHP-FPM, Nginx, Kubernetes, and Docker](https://matthewpalmer.net/kubernetes-app-developer/articles/php-fpm-nginx-kubernetes.html)  
 * [docker inspect](https://docs.docker.com/engine/reference/commandline/inspect/)  
 * [How to Install and Configure Minikube on Ubuntu](https://www.liquidweb.com/kb/how-to-install-and-configure-minikube-on-ubuntu/)  
   This article will demonstrate how to install and configure Minikube to set up a small Kubernetes cluster  

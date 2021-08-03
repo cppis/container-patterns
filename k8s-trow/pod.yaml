@@ -15,9 +15,9 @@ spec:
       emptyDir: {}
     
     # Add the ConfigMap we declared above as a volume for the pod
-    - name: nginx-config-volume
+    - name: k8s-nginx-volume
       configMap:
-        name: nginx-config
+        name: k8s-nginx-config
 
   containers:
     # Our PHP-FPM application
@@ -47,6 +47,6 @@ spec:
       volumeMounts:
         - name: shared-files
           mountPath: /var/www/html
-        - name: nginx-config-volume
+        - name: k8s-nginx-volume
           mountPath: /etc/nginx/nginx.conf
           subPath: nginx.conf
